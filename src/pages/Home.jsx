@@ -30,7 +30,7 @@ const Home = () => {
             </div>
             <div className="section mb-3">
                 <div className="section__header mb-2">
-                    <h2>TOP RATED TV</h2>
+                    <h2 className="fw-6">TOP RATED TV</h2>
                     <Link to="/tv">
                         <OutlineButton className="small">View More</OutlineButton>
                     </Link>
@@ -39,12 +39,12 @@ const Home = () => {
             </div>
             <div className="section mb-3">
                 <div className="section__header mb-2">
-                    <h2>UPCOMING TV</h2>
+                    <h2 className="fw-6">UPCOMING TV</h2>
                     <Link to="/tv">
                         <OutlineButton className="small">View More</OutlineButton>
                     </Link>
                 </div>
-                <MovieList category={category.tv} type={tvType.upcoming}/>
+                <MovieList category={category.tv} type={tvType.popular}/>
             </div>
         </div>
     </>

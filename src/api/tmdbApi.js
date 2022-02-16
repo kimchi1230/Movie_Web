@@ -5,6 +5,7 @@ export const category = {
     tv: 'tv'
 }
 export const movieType = {
+    similar: 'similar',
     upcoming: 'upcoming',
     popular: 'popular',
     top_rated: 'top_rated'
@@ -29,16 +30,16 @@ const tmdbApi = {
         const url = category[cate] + '/' + id + '/videos';
         return axiosCLient.get(url,{params: {}});
     },
-    seach: (cate,params) => {
-        const url = 'seach/' + category[cate];
+    search: (cate,params) => {
+        const url = 'search/' + category[cate];
         return axiosCLient.get(url,params);
     },
     detail: (cate,id, params) => {
         const url = category[cate] + '/' + id;
         return axiosCLient.get(url,params);
     },
-    credit: (cate,id) => {
-        const url = category[cate] + '/' + id + '/credit';
+    credits: (cate,id) => {
+        const url = category[cate] + '/' + id + '/credits';
         return axiosCLient.get(url,{params: {}});
     },
     smilar: (cate,id) => {

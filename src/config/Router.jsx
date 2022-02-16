@@ -3,12 +3,12 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from "../pages/Home";
 import Catalog from "../pages/Catalog";
-import Detail from "../pages/Detail";
+import Detail from "../pages/detail/Detail";
 const Router = () => {
   return (
     <Routes>
         <Route 
-            path="/:category/seach/:keyword" 
+            path="/:category/search/:keyword" 
             element = {<Catalog/>}
         />
         <Route 

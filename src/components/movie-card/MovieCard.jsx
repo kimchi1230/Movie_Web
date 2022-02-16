@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import Button from '../button/Button';
 import { category } from '../../api/tmdbApi';
 import apiConfig from '../../api/apiConfig';
-
+import Title from '../title/Title';
 
 
 
@@ -23,7 +23,7 @@ const MovieCard = props => {
               <i className='bx bx-play'></i>
           </Button>
       </div>
-      <h3>{item.title||item.name}</h3>
+      <Title>{item.title||item.name}</Title>
     </Link>
   )
 }
